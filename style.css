@@ -245,12 +245,12 @@ a {
     overflow: hidden;
     border-right: 2px solid var(--accent-primary);
     white-space: nowrap;
-    animation: typing 1.5s steps(6) forwards, blink 0.7s step-end infinite;
+    animation: typing 2s steps(12) forwards, blink 0.7s step-end infinite;
 }
 
 @keyframes typing {
     from { width: 0; }
-    to { width: 4.5ch; }
+    to { width: 9ch; }
 }
 
 @keyframes blink {
