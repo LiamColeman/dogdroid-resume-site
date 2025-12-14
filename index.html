@@ -21,7 +21,8 @@
         </div>
         <div class="nav-links">
             <a href="#about" class="nav-link">about</a>
-            <a href="#work" class="nav-link">work</a>
+            <a href="#experience" class="nav-link">experience</a>
+            <a href="#work" class="nav-link">projects</a>
             <a href="#contact" class="nav-link">contact</a>
         </div>
     </nav>
@@ -46,7 +47,7 @@
                     <h1 class="glitch" data-text="dogdroid">dogdroid</h1>
                     <p class="tagline">
                         <span class="tag-bracket">&lt;</span>
-                        developer / maker / digital wanderer
+                        software developer / RIT CS '25 / tinkerer
                         <span class="tag-bracket">/&gt;</span>
                     </p>
                     <div class="status-bar">
@@ -81,20 +82,21 @@
                     <div class="terminal-body">
                         <p><span class="prompt">$</span> cat bio.txt</p>
                         <p class="terminal-output">
-                            I build things for the web. Part human, part machine,
-                            all curiosity. I believe in clean code, dark themes,
-                            and the occasional 3am debugging session.
+                            Software developer with experience in mobile and web apps,
+                            IoT, computer vision, and machine learning. RIT Computer Science
+                            grad (Magna Cum Laude) with an AI concentration and a Glass minor.
+                            Yes, I blow glass. Yes, it's as cool as it sounds.
                         </p>
                         <p><span class="prompt">$</span> ls skills/</p>
                         <div class="skills-grid">
-                            <span class="skill">javascript</span>
-                            <span class="skill">typescript</span>
-                            <span class="skill">react</span>
-                            <span class="skill">node.js</span>
                             <span class="skill">python</span>
-                            <span class="skill">rust</span>
+                            <span class="skill">java</span>
+                            <span class="skill">typescript</span>
+                            <span class="skill">kotlin</span>
+                            <span class="skill">swift</span>
                             <span class="skill">go</span>
-                            <span class="skill">linux</span>
+                            <span class="skill">rust</span>
+                            <span class="skill">c</span>
                         </div>
                         <p class="cursor-line"><span class="prompt">$</span> <span class="cursor">_</span></p>
                     </div>
@@ -120,9 +122,79 @@
             </div>
         </section>
 
-        <section id="work" class="section work">
+        <section id="experience" class="section experience">
             <div class="section-header">
                 <span class="section-number">02</span>
+                <h2>experience.log</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="experience-timeline">
+                <article class="experience-card">
+                    <div class="exp-header">
+                        <div class="exp-company">URBN</div>
+                        <div class="exp-date">Summer 2024</div>
+                    </div>
+                    <div class="exp-role">Software Engineering Intern</div>
+                    <div class="exp-details">
+                        <p>Joined the purchase team for customer e-commerce across Anthropologie, Free People, Urban Outfitters, and Nuuly.</p>
+                        <ul>
+                            <li>Built a configuration service in Python/Tornado for internal apps to control user specs (currency, language, payment types)</li>
+                            <li>Won 1st place in company AI hackathon with a GPT-4 Vision + Claude solution for generating keywords from product images</li>
+                        </ul>
+                        <div class="exp-tech">
+                            <span>python</span>
+                            <span>go</span>
+                            <span>tornado</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="experience-card">
+                    <div class="exp-header">
+                        <div class="exp-company">Chariot Solutions</div>
+                        <div class="exp-date">2022 - 2023</div>
+                    </div>
+                    <div class="exp-role">Android Developer / Software Engineer Intern</div>
+                    <div class="exp-details">
+                        <p>Three internships on the Journal My Health mobile app for tracking user health data.</p>
+                        <ul>
+                            <li>Built an Angular/TypeScript web dashboard for admin analytics</li>
+                            <li>Developed Android features in Kotlin: blood pressure trackers, data visualizations, FitBit integration</li>
+                            <li>Collaborated with iOS team on cross-platform code review</li>
+                        </ul>
+                        <div class="exp-tech">
+                            <span>kotlin</span>
+                            <span>angular</span>
+                            <span>typescript</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="experience-card">
+                    <div class="exp-header">
+                        <div class="exp-company">ECRI</div>
+                        <div class="exp-date">Summer 2022</div>
+                    </div>
+                    <div class="exp-role">iOS Developer Intern</div>
+                    <div class="exp-details">
+                        <p>Modernized healthcare safety alert iOS application.</p>
+                        <ul>
+                            <li>Upgraded app from iOS 11 to iOS 15, updated CocoaPods dependencies</li>
+                            <li>Replaced deprecated Swift code with modern API calls and fixed failing unit tests</li>
+                        </ul>
+                        <div class="exp-tech">
+                            <span>swift</span>
+                            <span>ios</span>
+                            <span>cocoapods</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="work" class="section work">
+            <div class="section-header">
+                <span class="section-number">03</span>
                 <h2>projects.log</h2>
                 <div class="header-line"></div>
             </div>
@@ -130,25 +202,18 @@
                 <article class="project-card" data-project="1">
                     <div class="project-index">001</div>
                     <div class="project-content">
-                        <h3 class="project-title">Neural Bark</h3>
-                        <p class="project-desc">An AI-powered tool that translates dog barks into human emotions. Because why not.</p>
+                        <h3 class="project-title">ML for the Visually Impaired</h3>
+                        <p class="project-desc">Android app that uses TensorFlow to recognize objects in a room and speaks their name and location aloud.</p>
                         <div class="project-tech">
-                            <span>python</span>
+                            <span>kotlin</span>
                             <span>tensorflow</span>
-                            <span>fastapi</span>
+                            <span>android</span>
                         </div>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="project-link" aria-label="View source">
+                        <a href="https://github.com/LiamColeman" class="project-link" aria-label="View source">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="project-link" aria-label="Live demo">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                                <polyline points="15 3 21 3 21 9"/>
-                                <line x1="10" y1="14" x2="21" y2="3"/>
                             </svg>
                         </a>
                     </div>
@@ -158,25 +223,18 @@
                 <article class="project-card" data-project="2">
                     <div class="project-index">002</div>
                     <div class="project-content">
-                        <h3 class="project-title">Cyber Fetch</h3>
-                        <p class="project-desc">A neofetch-inspired system info display with a cyberpunk aesthetic. For terminal enthusiasts.</p>
+                        <h3 class="project-title">Treadmill to Walking Pad</h3>
+                        <p class="project-desc">Converting a full-size treadmill into a digitally controlled walking pad. Hardware hacking meets fitness.</p>
                         <div class="project-tech">
-                            <span>rust</span>
-                            <span>terminal</span>
-                            <span>ascii-art</span>
+                            <span>hardware</span>
+                            <span>iot</span>
+                            <span>reverse-eng</span>
                         </div>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="project-link" aria-label="View source">
+                        <a href="https://github.com/LiamColeman" class="project-link" aria-label="View source">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="project-link" aria-label="Live demo">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                                <polyline points="15 3 21 3 21 9"/>
-                                <line x1="10" y1="14" x2="21" y2="3"/>
                             </svg>
                         </a>
                     </div>
@@ -186,25 +244,18 @@
                 <article class="project-card" data-project="3">
                     <div class="project-index">003</div>
                     <div class="project-content">
-                        <h3 class="project-title">Packet Pup</h3>
-                        <p class="project-desc">Network monitoring dashboard with real-time packet visualization. Because networks are fun.</p>
+                        <h3 class="project-title">Auto Plant Watering</h3>
+                        <p class="project-desc">Raspberry Pi Zero system that measures soil moisture, controls a water pump, and sends data via MQTT to an Adafruit dashboard.</p>
                         <div class="project-tech">
-                            <span>go</span>
-                            <span>websockets</span>
-                            <span>d3.js</span>
+                            <span>python</span>
+                            <span>raspberry-pi</span>
+                            <span>mqtt</span>
                         </div>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="project-link" aria-label="View source">
+                        <a href="https://github.com/LiamColeman" class="project-link" aria-label="View source">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="project-link" aria-label="Live demo">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                                <polyline points="15 3 21 3 21 9"/>
-                                <line x1="10" y1="14" x2="21" y2="3"/>
                             </svg>
                         </a>
                     </div>
@@ -214,25 +265,18 @@
                 <article class="project-card featured" data-project="4">
                     <div class="project-index">004</div>
                     <div class="project-content">
-                        <h3 class="project-title">Void Terminal</h3>
-                        <p class="project-desc">A minimal, distraction-free terminal emulator with built-in focus mode and pomodoro timer.</p>
+                        <h3 class="project-title">Self-Hosted Homelab</h3>
+                        <p class="project-desc">Home server running Ollama, Open WebUI, Adguard Home, Jellyfin, and other self-hosted services. Local AI inference with Deepseek, Llama, and Gemma.</p>
                         <div class="project-tech">
-                            <span>electron</span>
-                            <span>typescript</span>
-                            <span>xterm.js</span>
+                            <span>docker</span>
+                            <span>linux</span>
+                            <span>ollama</span>
                         </div>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="project-link" aria-label="View source">
+                        <a href="https://github.com/LiamColeman" class="project-link" aria-label="View source">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="project-link" aria-label="Live demo">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                                <polyline points="15 3 21 3 21 9"/>
-                                <line x1="10" y1="14" x2="21" y2="3"/>
                             </svg>
                         </a>
                     </div>
@@ -243,7 +287,7 @@
 
         <section id="contact" class="section contact">
             <div class="section-header">
-                <span class="section-number">03</span>
+                <span class="section-number">04</span>
                 <h2>ping.sh</h2>
                 <div class="header-line"></div>
             </div>
@@ -256,9 +300,9 @@
                     </p>
                 </div>
                 <div class="contact-links">
-                    <a href="mailto:hello@dogdroid.dev" class="contact-link primary">
+                    <a href="mailto:lpc5500@rit.edu" class="contact-link primary">
                         <span class="link-icon">@</span>
-                        <span class="link-text">hello@dogdroid.dev</span>
+                        <span class="link-text">lpc5500@rit.edu</span>
                     </a>
                     <a href="https://github.com/LiamColeman" class="contact-link">
                         <span class="link-icon">
