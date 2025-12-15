@@ -629,6 +629,7 @@ h1.glitch::after {
     letter-spacing: 0.1em;
     padding: 0.25rem 0.75rem;
     border: 1px solid var(--border-subtle);
+    white-space: nowrap;
 }
 
 .exp-role {

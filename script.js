@@ -58,11 +58,6 @@ function initMoodCycler() {
 function initStatCounters() {
     const stats = document.querySelectorAll('.stat-value[data-target]');
 
-    const observerOptions = {
-        threshold: 0.5,
-        rootMargin: '0px'
-    };
-
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -70,7 +65,7 @@ function initStatCounters() {
                 observer.unobserve(entry.target);
             }
         });
-    }, observerOptions);
+    }, { threshold: 0.5 });
 
     stats.forEach(stat => {
         const target = stat.dataset.target;
@@ -82,23 +77,24 @@ function initStatCounters() {
 }
 
 function animateCounter(element) {
-    const target = parseInt(element.dataset.target);
+    const target = parseFloat(element.dataset.target);
+    const isDecimal = element.dataset.target.includes('.');
     const duration = 2000;
     const steps = 60;
     const stepDuration = duration / steps;
     const increment = target / steps;
 
-    let current = 0;
     let step = 0;
 
     const timer = setInterval(() => {
         step++;
-        current = Math.min(Math.round(increment * step), target);
-        element.textContent = current.toLocaleString();
+        const current = Math.min(increment * step, target);
+
+        element.textContent = isDecimal ? current.toFixed(2) : Math.round(current);
 
         if (step >= steps) {
             clearInterval(timer);
-            element.textContent = target.toLocaleString();
+            element.textContent = isDecimal ? target.toFixed(2) : target;
         }
     }, stepDuration);
 }
@@ -184,15 +180,17 @@ function initSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
+            const href = this.getAttribute('href');
 
+            if (href === '#') {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                return;
+            }
+
+            const target = document.querySelector(href);
             if (target) {
                 const offsetTop = target.offsetTop - 100;
-
-                window.scrollTo({
-                    top: offsetTop,
-                    behavior: 'smooth'
-                });
+                window.scrollTo({ top: offsetTop, behavior: 'smooth' });
             }
         });
     });
